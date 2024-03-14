@@ -4,7 +4,7 @@ import { Work_Sans } from "next/font/google"
 import "./globals.css"
 
 const workSans = Work_Sans({
-  weight: ["300", "600", "700"],
+  weight: ["300", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-work-sans"
 })
