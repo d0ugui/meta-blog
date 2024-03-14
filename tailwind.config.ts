@@ -10,6 +10,12 @@ const config: Config = {
     extend: {
       fontFamily: {
         work_sans: ["var(--font-work-sans)"]
+      },
+      colors: {
+        secondary_100: "#F4F4F5",
+        secondary_400: "#A1A1AA",
+        secondary_600: "#3B3C4A",
+        blue: "#4B6BFB"
       }
     }
   },

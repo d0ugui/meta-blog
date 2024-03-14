@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header"
 import type { Metadata } from "next"
 import { Work_Sans } from "next/font/google"
 import "./globals.css"
@@ -20,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable}`}>{children}</body>
+      <body
+        className={`${workSans.variable} w-[100%] h-[100%] flex flex-col items-center justify-center`}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
