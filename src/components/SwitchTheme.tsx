@@ -16,7 +16,7 @@ export function SwitchTheme() {
       htmlFor="check"
       className={cn(
         "flex bg-secondary_100 cursor-pointer relative w-12 h-7 rounded-[100px] transition-all duration-500",
-        isChecked && "bg-blue"
+        isChecked && "bg-primary"
       )}
     >
       <input

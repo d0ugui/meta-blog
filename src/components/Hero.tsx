@@ -3,17 +3,17 @@ import { PostCategory } from "./PostCategory"
 
 export function Hero() {
   return (
-    <section className="max-w-[1200px] mt-6">
-      <div className="w-[1200px] h-[600px] relative">
+    <section className="max-w-[1216px] w-full mt-6">
+      <div className="w-full relative">
         <Image
           src="https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg"
           alt="Datacenter"
-          width={1200}
-          height={0}
+          width={1216}
+          height={600}
           className="rounded-xl h-[600px]"
         />
 
-        <div className="bg-white rounded-xl absolute p-10 h-[304px] max-w-[598px] border-1 shadow-lg shadow-secondary_100 border-[#E8E8EA] left-16 -bottom-16">
+        <div className="bg-white rounded-xl absolute p-10 w-[598px] border-1 shadow-lg shadow-secondary_100 border-[#E8E8EA] left-16 -bottom-16">
           <PostCategory />
 
           <h1 className="text-secondary_800 text-4xl mt-4 font-semibold">
