@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        work_sans: ["var(--font-work-sans)"]
+        work_sans: ["var(--font-work-sans)"],
+        jakarta_sans: ["var(--font-jakarta-sans)"]
       },
       colors: {
         secondary_100: "#F4F4F5",

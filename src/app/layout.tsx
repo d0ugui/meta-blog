@@ -1,12 +1,19 @@
+import { Footer } from "@/components/Footer"
 import { Header } from "@/components/Header"
 import type { Metadata } from "next"
-import { Work_Sans } from "next/font/google"
+import { Plus_Jakarta_Sans, Work_Sans } from "next/font/google"
 import "./globals.css"
 
 const workSans = Work_Sans({
-  weight: ["300", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-work-sans"
+})
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  weight: ["400", "600", "800"],
+  subsets: ["latin"],
+  variable: "--font-jakarta-sans"
 })
 
 export const metadata: Metadata = {
@@ -22,10 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${workSans.variable} w-[100%] h-[100%] flex flex-col items-center justify-center`}
+        className={`${workSans.variable} ${plusJakartaSans.variable} w-[100%] h-[100%] flex flex-col items-center justify-center`}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
