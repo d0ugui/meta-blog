@@ -1,9 +1,14 @@
+import { cn } from "@/utils/cn"
 import Image from "next/image"
 import { PostCategory } from "./PostCategory"
 
-export function Posts() {
+interface PostsProps {
+  className?: string
+}
+
+export function Posts({ className }: PostsProps) {
   return (
-    <div className="grid grid-cols-3 gap-5 mt-8">
+    <div className={cn("grid grid-cols-3 gap-5 mt-8", className)}>
       <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px]">
         <Image
           src="https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg"

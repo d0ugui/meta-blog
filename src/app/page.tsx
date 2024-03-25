@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero"
 import { Posts } from "@/components/Posts"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -11,9 +12,12 @@ export default function Home() {
 
         <Posts />
 
-        <button className="px-4 py-3 border-2 border-secondary_100 rounded-md text-[#696A75] mt-8 w-fit mx-auto">
+        <Link
+          href="/blog"
+          className="px-4 py-3 border-2 border-secondary_100 rounded-md text-[#696A75] mt-8 w-fit mx-auto"
+        >
           View All Post
-        </button>
+        </Link>
       </section>
     </main>
   )
