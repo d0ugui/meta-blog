@@ -35,7 +35,7 @@ export function Header() {
             placeholder="Search"
           />
 
-          <div className="text-red-600">
+          <div className="text-secondary_600">
             <Search size={16} className="h-4 w-4" />
           </div>
         </label>

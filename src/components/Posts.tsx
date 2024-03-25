@@ -4,19 +4,19 @@ import { PostCategory } from "./PostCategory"
 export function Posts() {
   return (
     <div className="grid grid-cols-3 gap-5 mt-8">
-      <div className="border-2 border-secondary_100 p-4 rounded-xl">
+      <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px]">
         <Image
           src="https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg"
           alt=""
           width={360}
           height={240}
-          className="rounded-md"
+          className="rounded-md w-[360px] h-[240px]"
         />
 
         <div className="flex flex-col p-2 mt-4">
           <PostCategory />
 
-          <strong className="text-2xl text-secondary_800 font-semibold mt-4">
+          <strong className="text-2xl text-secondary_800 font-semibold mt-4 leading-7">
             The Impact of Technology on the Workplace: How Technology is
             Changing
           </strong>
@@ -38,19 +38,20 @@ export function Posts() {
           </div>
         </div>
       </div>
-      <div className="border-2 border-secondary_100 p-4 rounded-xl">
+
+      <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px]">
         <Image
           src="https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg"
           alt=""
           width={360}
           height={240}
-          className="rounded-md"
+          className="rounded-md w-[360px] h-[240px]"
         />
 
         <div className="flex flex-col p-2 mt-4">
           <PostCategory />
 
-          <strong className="text-2xl text-secondary_800 font-semibold mt-4">
+          <strong className="text-2xl text-secondary_800 font-semibold mt-4 leading-7">
             The Impact of Technology on the Workplace: How Technology is
             Changing
           </strong>
@@ -72,19 +73,20 @@ export function Posts() {
           </div>
         </div>
       </div>
-      <div className="border-2 border-secondary_100 p-4 rounded-xl">
+
+      <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px]">
         <Image
           src="https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg"
           alt=""
           width={360}
           height={240}
-          className="rounded-md"
+          className="rounded-md w-[360px] h-[240px]"
         />
 
         <div className="flex flex-col p-2 mt-4">
           <PostCategory />
 
-          <strong className="text-2xl text-secondary_800 font-semibold mt-4">
+          <strong className="text-2xl text-secondary_800 font-semibold mt-4 leading-7">
             The Impact of Technology on the Workplace: How Technology is
             Changing
           </strong>
@@ -106,19 +108,20 @@ export function Posts() {
           </div>
         </div>
       </div>
-      <div className="border-2 border-secondary_100 p-4 rounded-xl">
+
+      <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px]">
         <Image
           src="https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg"
           alt=""
           width={360}
           height={240}
-          className="rounded-md"
+          className="rounded-md w-[360px] h-[240px]"
         />
 
         <div className="flex flex-col p-2 mt-4">
           <PostCategory />
 
-          <strong className="text-2xl text-secondary_800 font-semibold mt-4">
+          <strong className="text-2xl text-secondary_800 font-semibold mt-4 leading-7">
             The Impact of Technology on the Workplace: How Technology is
             Changing
           </strong>
@@ -140,19 +143,20 @@ export function Posts() {
           </div>
         </div>
       </div>
-      <div className="border-2 border-secondary_100 p-4 rounded-xl">
+
+      <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px]">
         <Image
           src="https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg"
           alt=""
           width={360}
           height={240}
-          className="rounded-md"
+          className="rounded-md w-[360px] h-[240px]"
         />
 
         <div className="flex flex-col p-2 mt-4">
           <PostCategory />
 
-          <strong className="text-2xl text-secondary_800 font-semibold mt-4">
+          <strong className="text-2xl text-secondary_800 font-semibold mt-4 leading-7">
             The Impact of Technology on the Workplace: How Technology is
             Changing
           </strong>
@@ -174,19 +178,20 @@ export function Posts() {
           </div>
         </div>
       </div>
-      <div className="border-2 border-secondary_100 p-4 rounded-xl">
+
+      <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px]">
         <Image
           src="https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg"
           alt=""
           width={360}
           height={240}
-          className="rounded-md"
+          className="rounded-md w-[360px] h-[240px]"
         />
 
         <div className="flex flex-col p-2 mt-4">
           <PostCategory />
 
-          <strong className="text-2xl text-secondary_800 font-semibold mt-4">
+          <strong className="text-2xl text-secondary_800 font-semibold mt-4 leading-7">
             The Impact of Technology on the Workplace: How Technology is
             Changing
           </strong>
