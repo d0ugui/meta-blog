@@ -12,9 +12,11 @@ export default async function Home() {
     ]
   })
 
+  const heroPost = posts.shift()
+
   return (
     <main>
-      <Hero />
+      <Hero post={heroPost!} />
 
       <section className="mt-24 max-w-[1216px] flex flex-col">
         <h2 className="text-2xl font-bold">Latest Post</h2>
