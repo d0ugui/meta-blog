@@ -1,7 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["www.zoomtecnologia.com.br", "www.jamsadr.com"]
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.zoomtecnologia.com.br",
+      },
+      {
+        protocol: "https",
+        hostname: "www.jamsadr.com",
+      },
+      {
+        protocol: "https",
+        hostname: "imageio.forbes.com"
+      }
+    ]
   }
 };
 

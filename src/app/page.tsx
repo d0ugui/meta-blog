@@ -1,8 +1,17 @@
 import { Hero } from "@/components/Hero"
 import { Posts } from "@/components/Posts"
+import { prismaClient } from "@/lib/prisma"
 import Link from "next/link"
 
-export default function Home() {
+export default async function Home() {
+  const posts = await prismaClient.post.findMany({
+    orderBy: [
+      {
+        createdAt: "desc"
+      }
+    ]
+  })
+
   return (
     <main>
       <Hero />
@@ -10,7 +19,7 @@ export default function Home() {
       <section className="mt-24 max-w-[1216px] flex flex-col">
         <h2 className="text-2xl font-bold">Latest Post</h2>
 
-        <Posts />
+        <Posts posts={posts} />
 
         <Link
           href="/blog"
