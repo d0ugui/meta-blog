@@ -1,19 +1,24 @@
 import { PostCategory } from "@/components/PostCategory"
+import { Post } from "@prisma/client"
 import Image from "next/image"
 
-export function Hero() {
+interface HeroProps {
+  post: Post
+}
+
+export function Hero({ post }: HeroProps) {
   return (
     <section className="max-w-[1216px] w-full mt-6">
       <div
         className="w-full h-[450px] p-10 flex flex-col items-start justify-end rounded-xl"
         style={{
-          backgroundImage: `url("https://www.zoomtecnologia.com.br/wp-content/uploads/2020/12/thumbnail-datacenter-inteligente-huawei-fusionmodule.jpeg")`
+          backgroundImage: `url(${post.thumbnail})`
         }}
       >
         <PostCategory />
 
         <h1 className="text-white text-4xl mt-4 font-semibold max-w-[63%]">
-          The Impact of Technology on the Workplace: How Technology is Changing
+          {post.title}
         </h1>
 
         <div className="mt-6 flex flex-col items-start">

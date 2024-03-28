@@ -1,16 +1,10 @@
 import { Hero } from "@/components/Hero"
 import { Posts } from "@/components/Posts"
-import { prismaClient } from "@/lib/prisma"
+import { postsService } from "@/services/postsService"
 import Link from "next/link"
 
 export default async function Home() {
-  const posts = await prismaClient.post.findMany({
-    orderBy: [
-      {
-        createdAt: "desc"
-      }
-    ]
-  })
+  const { posts } = await postsService.getAll({})
 
   const heroPost = posts.shift()
 
