@@ -13,6 +13,7 @@ const config: Config = {
         jakarta_sans: ["var(--font-jakarta-sans)"]
       },
       colors: {
+        secondary_50: "#F6F6F7",
         secondary_100: "#F4F4F5",
         secondary_400: "#A1A1AA",
         secondary_500: "#696A75",
