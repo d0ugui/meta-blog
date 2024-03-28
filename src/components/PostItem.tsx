@@ -1,3 +1,4 @@
+import { formatDate } from "@/utils/formatDate"
 import { Post } from "@prisma/client"
 import Image from "next/image"
 import { PostCategory } from "./PostCategory"
@@ -37,7 +38,9 @@ export function PostItem({ post }: PostItemProps) {
               Jason Francisco
             </strong>
           </div>
-          <p className="text-secondary_400 font-normal">August 20, 2022</p>
+          <p className="text-secondary_400 font-normal">
+            {formatDate(post.createdAt)}
+          </p>
         </div>
       </div>
     </div>
