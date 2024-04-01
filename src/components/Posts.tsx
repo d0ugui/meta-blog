@@ -1,6 +1,6 @@
 import { cn } from "@/utils/cn"
 
-import { PostProps } from "@/entities/post"
+import { PostProps } from "@/interfaces/post"
 import { PostItem } from "./PostItem"
 
 interface PostsProps {

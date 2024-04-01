@@ -1,4 +1,4 @@
-import { PostProps } from "@/entities/post"
+import { PostProps } from "@/interfaces/post"
 import { formatDate } from "@/utils/formatDate"
 import Image from "next/image"
 import { PostCategory } from "./PostCategory"
