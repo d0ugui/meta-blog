@@ -11,7 +11,10 @@ export async function getAll({ maxSize = 7 }: GetAllProps) {
         createdAt: "desc"
       }
     ],
-    take: maxSize
+    take: maxSize,
+    include: {
+      user: true
+    }
   })
 
   const count = await prismaClient.post.count()

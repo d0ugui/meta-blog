@@ -1,10 +1,10 @@
+import { PostProps } from "@/entities/post"
 import { formatDate } from "@/utils/formatDate"
-import { Post } from "@prisma/client"
 import Image from "next/image"
 import { PostCategory } from "./PostCategory"
 
 interface PostItemProps {
-  post: Post
+  post: PostProps
 }
 
 export function PostItem({ post }: PostItemProps) {
@@ -28,14 +28,14 @@ export function PostItem({ post }: PostItemProps) {
         <div className="flex items-center gap-5 mt-5">
           <div className="flex gap-3 items-center">
             <Image
-              src="https://www.jamsadr.com/images/neutrals/person-donald-900x1080.jpg"
-              alt=""
-              width={0}
-              height={0}
+              src={post.user.userPhoto}
+              alt={post.user.name}
+              width={36}
+              height={36}
               className="rounded-full w-9 h-9"
             />
             <strong className="font-medium text-secondary_400 font-work_sans">
-              Jason Francisco
+              {post.user.name}
             </strong>
           </div>
           <p className="text-secondary_400 font-normal">

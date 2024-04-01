@@ -1,10 +1,11 @@
 import { cn } from "@/utils/cn"
-import { Post } from "@prisma/client"
+
+import { PostProps } from "@/entities/post"
 import { PostItem } from "./PostItem"
 
 interface PostsProps {
   className?: string
-  posts: Array<Post>
+  posts: Array<PostProps>
 }
 
 export function Posts({ className, posts }: PostsProps) {
