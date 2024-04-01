@@ -4,15 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "www.zoomtecnologia.com.br",
-      },
-      {
-        protocol: "https",
-        hostname: "www.jamsadr.com",
-      },
-      {
-        protocol: "https",
-        hostname: "imageio.forbes.com"
+        hostname: "media.istockphoto.com"
       },
       {
         protocol: "https",
