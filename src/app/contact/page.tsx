@@ -11,7 +11,7 @@ export default async function Contact() {
       <div className="flex flex-col items-center gap-6 bg-secondary_50 py-12 w-full">
         <div className="flex items-center gap-4">
           <Image
-            src="https://www.jamsadr.com/images/neutrals/person-donald-900x1080.jpg"
+            src="https://avatars.githubusercontent.com/u/63167055?v=4"
             alt=""
             width={64}
             height={64}
