@@ -7,25 +7,29 @@ export function Footer() {
     <footer className="w-full bg-[#E8E8EA] mt-20 font-jakarta_sans">
       <div className="max-w-[1216px] w-full m-auto mt-16 flex items-start justify-between">
         <div>
-          <strong className="text-lg font-semibold">About</strong>
-          <p className="text-[#696A75] mt-3 max-w-[280px]">
+          <strong className="text-lg font-semibold dark:text-white">
+            About
+          </strong>
+          <p className="text-[#696A75] mt-3 max-w-[280px] dark:text-secondary_300">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam
           </p>
 
           <p className="mt-6">
-            <span className="font-semibold">Email: </span>info@jstemplate.net
+            <span className="font-semibold dark:text-white">Email: </span>
+            info@jstemplate.net
           </p>
           <p>
-            <span className="font-semibold">Phone: </span>880 123 456 789
+            <span className="font-semibold dark:text-white">Phone: </span>880
+            123 456 789
           </p>
         </div>
 
         <div className="flex items-center justify-center gap-20 ">
           <div>
             <strong className="font-semibold text-lg">Quick Link</strong>
-            <ul className="mt-6 text-[#3B3C4A] flex flex-col gap-2">
+            <ul className="mt-6 text-[#3B3C4A] flex flex-col gap-2 dark:text-secondary_300">
               <li>Home</li>
               <li>About</li>
               <li>Blog</li>
@@ -37,7 +41,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-semibold text-lg">Category</h3>
-            <ul className="mt-6 text-[#3B3C4A] flex flex-col gap-2">
+            <ul className="mt-6 text-[#3B3C4A] flex flex-col gap-2 dark:text-secondary_300">
               <li>Lifestyle</li>
               <li>Technology</li>
               <li>Travel</li>
@@ -50,10 +54,10 @@ export function Footer() {
 
         <div className="bg-white px-9 py-8 rounded-xl">
           <div className="text-center">
-            <span className="text-xl text-[#181A2A] font-semibold leading-5">
+            <span className="text-xl text-[#181A2A] font-semibold leading-5 dark:text-white">
               Weekly Newsletter
             </span>
-            <p className="text-[#696A75] mt-2">
+            <p className="text-[#696A75] mt-2 dark:text-secondary_300">
               Get blog articles and offers via email
             </p>
           </div>
@@ -63,7 +67,7 @@ export function Footer() {
               <input
                 type="email"
                 placeholder="Your Email"
-                className="outline-none flex-1"
+                className="outline-none flex-1 dark:text-secondary_300"
               />
 
               <div className="text-secondary_500">
@@ -90,7 +94,7 @@ export function Footer() {
           </div>
         </div>
 
-        <ul className="flex gap-8 text-secondary_600">
+        <ul className="flex gap-8 text-secondary_600 dark:text-secondary_300">
           <li>Terms of Use</li>
           <li>Privacy Policy</li>
           <li>Cookie Policy</li>

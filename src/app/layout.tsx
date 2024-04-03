@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${workSans.variable} ${plusJakartaSans.variable} w-[100%] h-[100%] flex flex-col items-center justify-center`}
+        className={`${workSans.variable} ${plusJakartaSans.variable} w-[100%] h-[100%] flex flex-col items-center justify-center dark:bg-secondary_800`}
       >
         <Header />
         {children}

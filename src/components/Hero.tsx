@@ -21,10 +21,10 @@ export function Hero({ post }: HeroProps) {
             className="rounded-xl h-[600px]"
           />
 
-          <div className="bg-white rounded-xl absolute p-10 w-[598px] border-1 shadow-lg shadow-secondary_100 border-[#E8E8EA] left-16 -bottom-16">
+          <div className="bg-white rounded-xl absolute p-10 w-[598px] border-1 shadow-lg shadow-secondary_100 border-[#E8E8EA] left-16 -bottom-16 dark:bg-secondary_800">
             <PostCategory />
 
-            <h1 className="text-secondary_800 text-4xl mt-4 font-semibold">
+            <h1 className="text-secondary_800 text-4xl mt-4 font-semibold dark:text-white">
               {post.title}
             </h1>
 

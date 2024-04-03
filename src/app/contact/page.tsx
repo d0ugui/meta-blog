@@ -19,15 +19,17 @@ export default async function Contact() {
           />
 
           <div>
-            <strong className="font-medium text-secondary_800 font-work_sans text-xl">
+            <strong className="font-medium text-secondary_800 font-work_sans text-xl dark:text-white">
               Jonathan Doe
             </strong>
-            <p className="text-secondary_500 text-sm">Collaborator & Editor</p>
+            <p className="text-secondary_500 text-sm dark:text-secondary_300">
+              Collaborator & Editor
+            </p>
           </div>
         </div>
 
         <div className="max-w-[668px]">
-          <p className="text-center text-lg leading-[26px]">
+          <p className="text-center text-lg leading-[26px] dark:text-secondary_300">
             Meet Jonathan Doe, a passionate writer and blogger with a love for
             technology and travel. Jonathan holds a degree in Computer Science
             and has spent years working in the tech industry, gaining a deep

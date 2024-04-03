@@ -9,7 +9,9 @@ export default async function Blog() {
 
   return (
     <section className="max-w-[1216px] w-full flex flex-col items-center">
-      <h1 className="text-center font-semibold text-3xl">Page Title</h1>
+      <h1 className="text-center font-semibold text-3xl dark:text-white">
+        Page Title
+      </h1>
 
       <Hero post={heroPost!} />
 
