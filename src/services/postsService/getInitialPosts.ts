@@ -1,17 +1,19 @@
 import { prismaClient } from "@/lib/prisma"
 
-interface GetAllProps {
-  maxSize?: number
+interface GetInitialPostsProps {
+  numOfPosts?: number
 }
 
-export async function getAll({ maxSize = 7 }: GetAllProps) {
+export async function getInitialPosts({
+  numOfPosts = 7
+}: GetInitialPostsProps) {
   const posts = await prismaClient.post.findMany({
     orderBy: [
       {
         createdAt: "desc"
       }
     ],
-    take: maxSize,
+    take: numOfPosts,
     include: {
       user: true
     }

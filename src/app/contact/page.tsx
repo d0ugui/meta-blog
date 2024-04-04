@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default async function Contact() {
-  const { posts } = await postsService.getAll({ maxSize: 6 })
+  const { posts } = await postsService.getInitialPosts({ numOfPosts: 6 })
 
   return (
     <section className="max-w-[1216px] w-full flex flex-col">
