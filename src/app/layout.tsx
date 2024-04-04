@@ -3,6 +3,7 @@ import { Header } from "@/components/Header"
 import type { Metadata } from "next"
 import { Plus_Jakarta_Sans, Work_Sans } from "next/font/google"
 import "./globals.css"
+import { Providers } from "./providers"
 
 const workSans = Work_Sans({
   weight: ["400", "500", "600", "700"],
@@ -27,13 +28,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${workSans.variable} ${plusJakartaSans.variable} w-[100%] h-[100%] flex flex-col items-center justify-center dark:bg-secondary_800`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
