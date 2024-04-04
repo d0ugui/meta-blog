@@ -1,13 +1,41 @@
-import brandLogo from "@/assets/brandLogo.svg"
+"use client"
+
 import { Search } from "lucide-react"
+import { useTheme } from "next-themes"
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 import { SwitchTheme } from "./SwitchTheme"
 
 export function Header() {
+  const [mounted, setMounted] = useState(false)
+  const { resolvedTheme } = useTheme()
+
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) return null
+
   return (
     <header className="max-w-[1216px] w-full py-8 flex items-center justify-between">
-      <Image src={brandLogo} alt="Meta Blog" />
+      <div className="flex items-center gap-2">
+        <Image
+          src={
+            resolvedTheme === "dark"
+              ? "/assets/light-logo.svg"
+              : "/assets/dark-logo.svg"
+          }
+          alt="Meta Blog"
+          width={36}
+          height={36}
+        />
+
+        <p className="text-3xl">
+          Meta
+          <span className="font-extrabold text-secondary_900 dark:text-white">
+            Blog
+          </span>
+        </p>
+      </div>
 
       <div className="flex items-center gap-5">
         <div className="flex gap-10 text-secondary_600 mx-[116px] dark:text-white">

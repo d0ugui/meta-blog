@@ -8,7 +8,7 @@ export default async function Contact() {
 
   return (
     <section className="max-w-[1216px] w-full flex flex-col">
-      <div className="flex flex-col items-center gap-6 bg-secondary_50 py-12 w-full">
+      <div className="flex flex-col items-center gap-6 bg-secondary_50 py-12 w-full dark:bg-secondary_700">
         <div className="flex items-center gap-4">
           <Image
             src="https://avatars.githubusercontent.com/u/63167055?v=4"

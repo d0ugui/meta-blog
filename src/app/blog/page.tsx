@@ -17,7 +17,7 @@ export default async function Blog() {
 
       <Posts className="mt-12" posts={posts} />
 
-      <button className="px-4 py-3 border-2 border-secondary_100 rounded-md text-[#696A75] mt-8">
+      <button className="px-4 py-3 border-2 border-secondary_100 rounded-md text-[#696A75] mt-8 dark:border-secondary_700">
         Load more
       </button>
     </section>

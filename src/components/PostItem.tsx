@@ -10,7 +10,7 @@ interface PostItemProps {
 
 export function PostItem({ post }: PostItemProps) {
   return (
-    <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px]">
+    <div className="border-2 border-secondary_100 p-4 rounded-xl h-[488px] dark:border-secondary_700">
       <Link href={`/blog/${post.slug}`}>
         <Image
           src={post.thumbnail}

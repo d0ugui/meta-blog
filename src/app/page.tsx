@@ -19,7 +19,7 @@ export default async function Home() {
 
         <Link
           href="/blog"
-          className="px-4 py-3 border-2 border-secondary_100 rounded-md text-secondary_500 mt-8 w-fit mx-auto dark:bg-transparent"
+          className="px-4 py-3 border-2 border-secondary_100 rounded-md text-secondary_500 mt-8 w-fit mx-auto dark:bg-transparent dark:border-secondary_700"
         >
           View All Post
         </Link>

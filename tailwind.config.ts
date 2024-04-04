@@ -22,6 +22,7 @@ const config: Config = {
         secondary_600: "#3B3C4A",
         secondary_700: "#242535",
         secondary_800: "#181A2A",
+        secondary_900: "#141624",
         primary: "#4B6BFB"
       }
     }
