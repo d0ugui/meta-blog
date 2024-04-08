@@ -10,6 +10,7 @@ import { SwitchTheme } from "./SwitchTheme"
 export function Header() {
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme } = useTheme()
+  const [search, setSearch] = useState("")
 
   useEffect(() => setMounted(true), [])
 
@@ -62,11 +63,21 @@ export function Header() {
               className="outline-none flex-1 text-sm bg-secondary_100 placeholder:text-secondary_400 max-w-[114px] dark:bg-secondary_700 dark:text-secondary_400"
               type="text"
               placeholder="Search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
             />
 
-            <div className="text-secondary_600 dark:text-secondary_400">
+            <Link
+              href={{
+                pathname: "/results",
+                query: {
+                  search
+                }
+              }}
+              className="text-secondary_600 dark:text-secondary_400"
+            >
               <Search size={16} className="h-4 w-4" />
-            </div>
+            </Link>
           </label>
 
           <SwitchTheme />
