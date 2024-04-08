@@ -89,7 +89,7 @@ export default async function Contact() {
       </div>
 
       <h2 className="mt-12 font-bold text-2xl">Latest Posts</h2>
-      <Posts posts={posts} />
+      <Posts initialPosts={posts} />
     </section>
   )
 }

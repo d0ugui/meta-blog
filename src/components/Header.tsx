@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="max-w-[1216px] w-full py-8 flex items-center justify-between">
-      <div className="flex items-center gap-2">
+      <Link href="/" className="flex items-center gap-2">
         <Image
           src={
             resolvedTheme === "dark"
@@ -35,7 +35,7 @@ export function Header() {
             Blog
           </span>
         </p>
-      </div>
+      </Link>
 
       <div className="flex items-center gap-5">
         <div className="flex gap-10 text-secondary_600 mx-[116px] dark:text-white">

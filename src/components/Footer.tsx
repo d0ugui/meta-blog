@@ -3,6 +3,7 @@
 import { Mail } from "lucide-react"
 import { useTheme } from "next-themes"
 import Image from "next/image"
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export function Footer() {
@@ -94,24 +95,28 @@ export function Footer() {
 
       <div className="max-w-[1200px] w-full m-auto flex items-center justify-between py-8 border-t-2 border-[#DCDDDF] mt-16 dark:border-secondary_700">
         <div className="flex gap-2">
-          <Image
-            src={
-              resolvedTheme === "dark"
-                ? "/assets/light-logo.svg"
-                : "/assets/dark-logo.svg"
-            }
-            alt="Logo"
-            width={48}
-            height={48}
-          />
+          <Link href="/">
+            <Image
+              src={
+                resolvedTheme === "dark"
+                  ? "/assets/light-logo.svg"
+                  : "/assets/dark-logo.svg"
+              }
+              alt="Logo"
+              width={48}
+              height={48}
+            />
+          </Link>
 
           <div>
-            <p className="text-xl">
-              Meta
-              <span className="font-extrabold text-secondary_900 dark:text-white">
-                Blog
-              </span>
-            </p>
+            <Link href="/">
+              <p className="text-xl">
+                Meta
+                <span className="font-extrabold text-secondary_900 dark:text-white">
+                  Blog
+                </span>
+              </p>
+            </Link>
             <p>
               © JS Template{" "}
               <span className="dark:text-secondary_300">
