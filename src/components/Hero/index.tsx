@@ -2,7 +2,7 @@ import { PostProps } from "@/interfaces/post"
 import { formatDate } from "@/utils/formatDate"
 import Image from "next/image"
 import Link from "next/link"
-import { PostCategory } from "./PostCategory"
+import { PostCategory } from "../PostCategory"
 
 interface HeroProps {
   post: PostProps

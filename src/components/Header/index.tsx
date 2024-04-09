@@ -5,7 +5,7 @@ import { useTheme } from "next-themes"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { SwitchTheme } from "./SwitchTheme"
+import { SwitchTheme } from "../SwitchTheme"
 
 export function Header() {
   const [mounted, setMounted] = useState(false)
@@ -30,12 +30,12 @@ export function Header() {
           height={36}
         />
 
-        <p className="text-3xl">
+        <h1 className="text-3xl">
           Meta
           <span className="font-extrabold text-secondary_900 dark:text-white">
             Blog
           </span>
-        </p>
+        </h1>
       </Link>
 
       <div className="flex items-center gap-5">
