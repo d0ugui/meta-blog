@@ -13,7 +13,9 @@ export default async function Home() {
       <Hero post={heroPost!} />
 
       <section className="mt-24 max-w-[1216px] flex flex-col">
-        <h2 className="text-2xl font-bold dark:text-white">Latest Post</h2>
+        <h2 className="text-2xl font-bold dark:text-white">
+          TESTANDO WORKFLOW
+        </h2>
 
         <Posts initialPosts={posts} />
 
