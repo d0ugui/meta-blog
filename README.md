@@ -1,23 +1,21 @@
-# Boilerplate Apps Routers
+<h1 align="center">
+    <img src="./public/assets/banner.png" alt="Meta Blog" border="0">
+</h1>
 
-This is a boilerplate created based in Next.js v14 using the new features and patterns like Apps Router.
+# Meta Blog
+
+Meta Blog serves as a platform to display blog posts that are stored in supabase database. The application is designed to showcase best practices in Next.js development, including efficient data fetching, client-side rendering, and seamless navigation. The primary goal of this project is to enhance my skills and knowledge in Next.js v14. There is a GitHub workflow to run the unit tests before each pull request and it's only allowed to merge after the green result.
 
 ## Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=ts,tailwind,react,nextjs,jest)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=ts,nestjs,prisma,tailwind,jest,githubactions)](https://skillicons.dev)
 
-## Using as template
+## Getting Started
 
-- `npx create-next-app --example https://github.com/d0ugui/boilerplate-apps-router.git`
-
-## Commands
-
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
+1. **Install Dependencies**: `npm install or yarn`
+2. **Environment variables**: Copy `.env.example` to a new `.env`
+3. **Database Setup**: `npx prisma migrate dev --name init`
+4. **Start Developing**: `npm run dev or yarn dev`
 
 ## License
 
