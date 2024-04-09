@@ -21,7 +21,7 @@ export function PostItem({ post }: PostItemProps) {
         />
 
         <div className="flex flex-col p-2 mt-4">
-          <PostCategory />
+          <PostCategory title={post.category.title} />
 
           <strong className="text-2xl text-secondary_800 font-semibold mt-4 leading-7 line-clamp-3 dark:text-white">
             {post.title}

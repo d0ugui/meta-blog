@@ -13,7 +13,12 @@ export async function getPostsBySearch(search: string) {
       ]
     },
     include: {
-      user: true
+      user: true,
+      category: {
+        select: {
+          title: true
+        }
+      }
     }
   })
 

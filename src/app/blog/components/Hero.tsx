@@ -19,7 +19,7 @@ export function Hero({ post }: HeroProps) {
             backgroundSize: "cover"
           }}
         >
-          <PostCategory />
+          <PostCategory title={post.category.title} />
 
           <h1 className="text-white text-4xl mt-4 font-semibold max-w-[63%] dark:text-white">
             {post.title}

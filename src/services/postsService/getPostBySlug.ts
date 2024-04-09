@@ -6,7 +6,12 @@ export async function getPostBySlug(postSlug: string) {
       slug: postSlug
     },
     include: {
-      user: true
+      user: true,
+      category: {
+        select: {
+          title: true
+        }
+      }
     }
   })
 

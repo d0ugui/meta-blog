@@ -15,7 +15,12 @@ export async function getInitialPosts({
     ],
     take: numOfPosts,
     include: {
-      user: true
+      user: true,
+      category: {
+        select: {
+          title: true
+        }
+      }
     }
   })
 
