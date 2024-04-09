@@ -17,6 +17,9 @@ describe("Hero component tests", () => {
       name: "Douglas Oliveira",
       email: "douglas@douglas.com",
       userPhoto: "https://avatars.githubusercontent.com/u/63167055?v=4"
+    },
+    category: {
+      title: "teste one"
     }
   }
 
