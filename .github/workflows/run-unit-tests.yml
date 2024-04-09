@@ -1,12 +1,6 @@
 name: Run Unit Tests
-env:
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
-on:
-  push:
-    branches:
-      - main
+on: [pull_request]
 
 jobs:
   run-unit-tests:
@@ -14,37 +8,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: setup checkout
         uses: actions/checkout@v4
 
-      - name: Setup node
+      - name: setup node
         uses: actions/setup-node@v3
-          with:
-            node-version: 18
-            cache: "npm"
+        with:
+          node-version: 18
+          cache: "npm"
 
-      - name: Install dependencies
+      - name: install dependencies
         run: npm ci
 
-      - name: Run tests
+      - name: run tests
         run: npm run test
-
-  vercel-deploy:
-    runs-on: ubuntu-latest
-    needs: run-unit-tests
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install deps and build
-        run: |
-          npm ci
-          npm run build
-
-      - name: Vercel Deploy
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
