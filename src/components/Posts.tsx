@@ -32,7 +32,8 @@ export function Posts({
     })
 
     if (morePosts) {
-      setPosts((prevState) => [...prevState, ...morePosts])
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      setPosts((prevState: any) => [...prevState, ...morePosts])
       setIsLoading(false)
     }
   }
