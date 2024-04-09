@@ -16,7 +16,7 @@ export default async function PageDetails({
 
   return (
     <div className="mt-8 max-w-[800px] w-full">
-      <PostCategory />
+      <PostCategory title={post.category.title} />
 
       <h1 className="font-semibold text-4xl mt-4">{post.title}</h1>
 
