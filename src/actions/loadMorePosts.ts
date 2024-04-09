@@ -19,7 +19,12 @@ export async function loadMorePosts({ cursor }: GetLoadMorePostsProps) {
       id: cursor
     },
     include: {
-      user: true
+      user: true,
+      category: {
+        select: {
+          title: true
+        }
+      }
     }
   })
 
